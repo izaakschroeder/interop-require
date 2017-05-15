@@ -4,5 +4,18 @@
   "description": "Require babel's ES6 modules from node.",
   "author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
   "license": "CC0-1.0",
-  "repository": "izaakschroeder/interop-require"
+  "repository": "izaakschroeder/interop-require",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.1"
+  },
+  "main": "index.js",
+  "files": [
+	"index.js"
+  ],
+  "scripts": {
+    "test": "mocha",
+	"cov": "istanbul cover node_modules/.bin/_mocha"
+  }
 }
